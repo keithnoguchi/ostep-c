@@ -7,3 +7,5 @@ CFLAGS := -Wall -Werror -O2
 all: $(TARGET)
 %: %.o
 	$(CC) $(CFLAGS) -o $@ $^
+c clean:
+	$(RM) $(TARGET)
